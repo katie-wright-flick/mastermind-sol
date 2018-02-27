@@ -1,0 +1,14 @@
+{
+  "name": "mastermind_js",
+  "version": "1.0.0",
+  "scripts": {
+    "game": "node main.js",
+    "test": "jest"
+  },
+  "author": "Greg Signal <greg.signal@flickelectric.co.nz>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "jest": "^22.4.2",
+    "readline-sync": "^1.4.9"
+  }
+}
