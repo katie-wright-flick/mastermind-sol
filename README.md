@@ -41,7 +41,7 @@ complete GameEngine class.
 
 We’ve also got a test suite in `/test` with some test that are failing.
 
-To complete the game, you’ll need to write the ‘generate_checksum’ method, and
+To complete the game, you’ll need to write the `calculateChecksum` method, and
 ensure that your solution is robust enough to cover all of the cases in the
 test file.
 
