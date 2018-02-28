@@ -4,7 +4,7 @@ Your task is to complete this terminal based Mastermind game.
 
 Mastermind is a code breaking game. The computer has a secret four letter code
 that the user has to guess. The code is made up of any combination of the
-letters A, B, C, D, E, F, G, H.
+letters A, B, C, D, E, F, G, H. **The secret may contain duplicate letters.**
 
 When the user attempts to guess the code, the computer returns a checksum
 indicating the accuracy of your guess
