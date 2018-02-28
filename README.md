@@ -18,10 +18,10 @@ For example:
 
 - If the secret code is ABCD and you guess CADB, the computer will return OOOO
 - If the secret code is ABCD and you guess EFGH, the computer will return ----
-- If the secret code is ABCD and you guess ABEA, the computer will return XX--
 - If the secret code is ABCD and you guess FBDE, the computer will return XO--
-- If the secret code is ABCD and you guess DEFG, the computer will return O---
-- If the secret code is ABCD and you guess DECG, the computer will return XO--
+- If the secret code is AEED and you guess ABEA, the computer will return XX--
+- If the secret code is AEED and you guess DEFA, the computer will return XOO-
+- If the secret code is AEED and you guess EEDA, the computer will return XOOO
 
 You can read more about it
 [here](https://en.wikipedia.org/wiki/Mastermind_(board_game)). You can play an
