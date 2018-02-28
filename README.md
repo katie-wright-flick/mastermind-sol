@@ -2,21 +2,16 @@
 
 Your task is to complete this terminal based Mastermind game.
 
-Mastermind is a code breaking game. The computer has a secret four letter code
-that the user has to guess. The code is made up of any combination of the
-letters A, B, C, D, E, F, G, H.
+Mastermind is a code breaking game. The computer has a secret four letter code that the player has to guess. The code is made up of any combination of the letters A, B, C, D, E, F, G, H. Letters can appear more than once in the code. The player has 10 attempts to correctly guess the code.
 
-When the user attempts to guess the code, the computer returns a checksum
-indicating the accuracy of your guess
-- the checksum contains an ‘X’ for every letter than is correct, and in the
-	correct position
-- the checksum contains an ‘O’ for every letter that is correct, but in the
-	wrong position
+When the player attempts to guess the code, the computer returns a checksum indicating the accuracy of your guess
+- the checksum contains an ‘X’ for every letter that is correct, and in the correct position
+- the checksum contains an ‘O’ for every letter that is correct, but in the wrong position
 - the checksum contains a ‘-’ for every letter that is incorrect
+- the checksum won’t return multiple results for each letter in the guess. For example, if the code is ‘AABD’ and you guess ‘ACGE’, the checksum will be ‘X---’
+- the checksum always displays the letters in the order X, O then -.
 
-Note that the checksum always displays the letters in the order X, O then -
-
-For example,
+For example:
 
 - If the secret code is ABCD and you guess CADB, the computer will return OOOO
 - If the secret code is ABCD and you guess EFGH, the computer will return ----
@@ -35,6 +30,18 @@ which uses coloured pegs rather than letters.
 Grab a copy of the repository and install the dependencies with `npm install`
 
 ## Part 1
+
+We’ve provided a complete GamePresenter class for the game, and a partially
+complete GameEngine class. We need you to do a few crucial parts of the logic.
+In the root of the mastermind code repository, try running `npm run game`.
+You’ll see that the checksum returned is always ‘----’, irrespective of the guess.
+
+We need you to implement the correct logic to return the proper checksum.
+We’ve also provided a test suite in `/test` with tests that are failing.
+
+To complete the game you’ll need to
+- Complete the method that generates the checksum.
+- Ensure that you have a passing test suite. Run `npm run test` to see.
 
 We’ve provided a complete GamePresenter class for the game, and a partially
 complete GameEngine class.

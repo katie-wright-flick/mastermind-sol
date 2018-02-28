@@ -1,13 +1,13 @@
 const introMessage = `
 
-Welcome to Mastermind!
+Welcome to Flick Mastermind 😎
 
 Your adversary has encoded some valuable information using a secret - it's your
 job to guess it!
 
   ????
 
-The secret is four characters long, and consists of any one of the following 8
+The secret is four characters long, and consists of any of the following 8
 letters:
 
 A B C D E F G H
@@ -18,8 +18,8 @@ When you submit a guess, you get a hint back:
 - If one of your letters is correct but in the wrong position, the hint will
   contain a O
 
-- The position of the X and O in the hint does not match the position of the
-  guessed letter. (i.e. for a secret "AABC", if your guess was "BBBC" then
+- The position of the X and O in the hint does not necssarily match the position of
+  the guessed letter. (i.e. for a secret "AABC", if your guess was "CADB" then
   "XO--" would be the hint)
 
 Good luck!
@@ -53,6 +53,8 @@ module.exports = class GamePresenter {
   continue() {
     this.__clearTerm();
     console.log("Guesses so far:\n");
+    console.log("|       guess     |    checksum")
+    console.log("|-----------------|--------------")
 
     let guesses = this.engine.guesses.map(([guess, checksum], i) => {
       return `[${i + 1}]`.padEnd(8) +

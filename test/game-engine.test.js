@@ -72,7 +72,10 @@ describe('GameEngine', function () {
       test('returns XXXX for the guess EFED', function () {
         expect(subject().calculateChecksum('EFED')).toBe('XXXX');
       });
+
+      test('returns XO-- for the guess FAEF', function () {
+        expect(subject().calculateChecksum('FAEF')).toBe('XO--');
+      });
     });
   });
 });
-
