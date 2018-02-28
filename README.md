@@ -46,19 +46,6 @@ To complete the game you’ll need to
 - Complete the method that generates the checksum.
 - Ensure that you have a passing test suite. Run `npm run test` to see.
 
-We’ve provided a complete GamePresenter class for the game, and a partially
-complete GameEngine class.
-
-We’ve also got a test suite in `/test` with some test that are failing.
-
-To complete the game, you’ll need to write the `calculateChecksum` method, and
-ensure that your solution is robust enough to cover all of the cases in the
-test file.
-
-To play the game, run `npm run game` in the root of the mastermind repository.
-
-To run the tests, run `npm run test` in the root of the mastermind repository.
-
 ## Part 2
 
 Now that you have functioning game, what happens if the player enters something
