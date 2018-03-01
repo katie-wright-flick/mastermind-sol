@@ -11,23 +11,23 @@ describe('GameEngine', function () {
         expect(subject().calculateChecksum('CADB')).toBe('OOOO');
       });
 
-      test('returns OOOO for the guess EFGH', function () {
+      test('returns ---- for the guess EFGH', function () {
         expect(subject().calculateChecksum('EFGH')).toBe('----');
       });
 
-      test('returns OOOO for the guess ABEA', function () {
+      test('returns XX-- for the guess ABEA', function () {
         expect(subject().calculateChecksum('ABEA')).toBe('XX--');
       });
 
-      test('returns OOOO for the guess FBDE', function () {
+      test('returns XO-- for the guess FBDE', function () {
         expect(subject().calculateChecksum('FBDE')).toBe('XO--');
       });
 
-      test('returns OOOO for the guess DEFG', function () {
+      test('returns O--- for the guess DEFG', function () {
         expect(subject().calculateChecksum('DEFG')).toBe('O---');
       });
 
-      test('returns OOOO for the guess DECG', function () {
+      test('returns XO-- for the guess DECG', function () {
         expect(subject().calculateChecksum('DECG')).toBe('XO--');
       });
 
