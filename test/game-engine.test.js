@@ -53,10 +53,6 @@ describe('GameEngine', function () {
         expect(subject().calculateChecksum('EEED')).toBe('XXX-');
       });
 
-      test('returns XX-- for the guess EEEE', function () {
-        expect(subject().calculateChecksum('EEEE')).toBe('XX--');
-      });
-
       test('returns XOO- for the guess DEEE', function () {
         expect(subject().calculateChecksum('DEEE')).toBe('XOO-');
       });
