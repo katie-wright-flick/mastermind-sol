@@ -31,6 +31,17 @@ module.exports = class GameEngine {
   }
   
   calculateChecksum(guess) { 
-   return '----';
+    let hint = guess.split("").map((g, idx) => {
+      if (g === this._secret[idx]) return 'X';
+      if (this._secret.includes(g)) {
+        const guessArray = guess.split("");
+        const lettersInGuessToCurrentIndex = guessArray.slice(0, idx + 1);
+        const instancesofCurrentLetter = lettersInGuessToCurrentIndex.filter(letter => letter === g)
+        const firstOccuranceOfCurrentLetterInGuess = instancesofCurrentLetter.length === 1;
+        if(firstOccuranceOfCurrentLetterInGuess) return "O";
+      } 
+      return '-'
+    })
+    return hint.sort().reverse().join('');
   } 
 }
